@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">C Career</string>
+    <string name="splash_text">C Career</string>
+    <string name="slide_quick_counsel">Quick Counsel</string>
+    <string name="about">About</string>
+    <string name="slide_mentor">Mentorship</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="login_email_enter">Email</string>
+    <string name="pass_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="dont_have_acc">Don\'t have an account ?</string>
+    <string name="register"><u>Register</u></string>
+    <string name="login_text">LOGIN</string>
+    <string name="register_without_u">Register</string>
+    <string name="first_name_reg">First name</string>
+    <string name="last_name_reg">Last name</string>
+    <string name="password">Password</string>
+    <string name="retype_password"> Retype password</string>
+    <string name="already_reg">Already have an account ?</string>
+    <string name="please_wait">Please Wait ...</string>
+    <string name="logOut">Log Out</string>
+    <string name="Ishan">Ishan</string>
+    <string name="IshanRoll">11912057</string>
+    <string name="Pankaj">Pankaj</string>
+    <string name="PankajRoll" >11912054</string>
+    <string name="Vedant">Vedant</string>
+    <string name="VedantRoll">11912061</string>
+    <string name="Yogesh">Yogesh</string>
+    <string name="YogeshRoll">11912058</string>
+
+
+</resources>

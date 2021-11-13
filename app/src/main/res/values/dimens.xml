@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_screen_text_size">35sp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="button_radius_small">8dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+
+
+</resources>
