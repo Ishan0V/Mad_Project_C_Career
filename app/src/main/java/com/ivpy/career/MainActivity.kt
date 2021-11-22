@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(applicationContext,"Logged Out!!",Toast.LENGTH_SHORT).show()
         Timer().schedule(timerTask {
             hideProgress()
+            finish()
             startActivity(Intent(this@MainActivity,LoginActivity::class.java))
         },500)
     }

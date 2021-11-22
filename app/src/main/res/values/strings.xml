@@ -23,11 +23,95 @@
     <string name="Ishan">Ishan</string>
     <string name="IshanRoll">11912057</string>
     <string name="Pankaj">Pankaj</string>
-    <string name="PankajRoll" >11912054</string>
+    <string name="PankajRoll">11912054</string>
     <string name="Vedant">Vedant</string>
     <string name="VedantRoll">11912061</string>
     <string name="Yogesh">Yogesh</string>
     <string name="YogeshRoll">11912058</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SelectCurrentStudy">What are you pursuing right now ?</string>
+    <string name="Tenth">10th</string>
+    <string name="Tewelth">12th</string>
+    <string name="UG">UG</string>
+    <string name="MentorSection">Mentor Section</string>
+    <string name="streamSelect">Select the stream :</string>
+    <string name="PCM">PCM</string>
+    <string name="PCB">PCB</string>
+    <string name="commerce">commerce</string>
+    <string name="arts">arts</string>
+    <string name="title_activity_mentor">MentorActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_product">Product</string>
+    <string name="title_mentor">Mentor</string>
+    <string name="add_mentor">Add mentor</string>
+    <string name="name">Name</string>
+    <string name="degree">Degree</string>
+    <string name="experience">Experience</string>
+    <string name="institute">Institute</string>
+    <string name="submit">submit</string>
+
+
+    <string name="title_complete_profile">COMPLETE PROFILE</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+
+    <string name="read_storage_permission_denied">Oops, you just denied the permission for storage. You can also allow it from settings.</string>
+    <string name="image_selection_failed">Image selection Failed!</string>
+
+    <string name="err_msg_enter_mobile_number">Please enter mobile number.</string>
+
+    <string name="msg_profile_update_success">Your profile is updated successfully.</string>
+
+
+    <string name="title_activity_dashboard">MainActivity</string>
+
+
+    <string name="title_products">Products</string>
+    <string name="title_orders">Orders</string>
+
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_settings">SETTINGS</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+
+    <string name="title_edit_profile">EDIT PROFILE</string>
+
+    <string name="action_add_product">Add Product</string>
+
+    <string name="title_add_product">ADD PRODUCT</string>
+    <string name="et_hint_product_title">Product Title</string>
+    <string name="et_hint_product_price">Product Price ($)</string>
+    <string name="et_hint_product_description">Product Description</string>
+    <string name="et_hint_product_quantity">Product Quantity</string>
+
+    <string name="err_msg_select_product_image">Please select product image.</string>
+    <string name="err_msg_enter_product_title">Please enter product title.</string>
+    <string name="err_msg_enter_product_price">Please enter product price.</string>
+    <string name="err_msg_enter_product_description">Please enter product description.</string>
+    <string name="err_msg_enter_product_quantity">Please enter product quantity.</string>
+
+    <string name="mentor_uploaded_success_message">Your mentor is uploaded successfully.</string>
+    <string name="no_products_added_yet">No products added yet!</string>
+    <string name="no_dashboard_item_found">No items found!</string>
+
+    <!--TODO Step 3: Add the string resources to the strings.xml file-->
+    <!--START-->
+    <string name="product_delete_success_message">Your product is deleted successfully.</string>
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_dialog_message">Are you sure you want to delete the product?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_data">No data</string>
 
 
 </resources>

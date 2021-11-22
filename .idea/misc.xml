@@ -7,14 +7,28 @@
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/drawable/button_default.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/drawable/cursor_navy.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/drawable/edit_text_border.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2301801801801802" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout-v23/activity_add_product.xml" value="0.25" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_about.xml" value="0.24320652173913043" />
-        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_counselling.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_add_product.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_counselling.xml" value="0.21306306306306305" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_main.xml" value="0.23777173913043478" />
-        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_mentor.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_mentor.xml" value="0.21621621621621623" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/activity_splash_screen.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_about.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_after_tenth.xml" value="0.21306306306306305" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_base.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_dashboard.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_home.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_initial_counsel.xml" value="0.21306306306306305" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_m_science.xml" value="0.20405405405405405" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/fragment_tewelth.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/mentor_item_layout.xml" value="0.21621621621621623" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/layout/progress_fullscreen.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/menu/add_product_menu.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21621621621621623" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/CareerC/app/src/main/res/menu/main_nav_slide_menu.xml" value="0.25" />
         <entry key="..\:/Users/Ishan0V/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
       </map>

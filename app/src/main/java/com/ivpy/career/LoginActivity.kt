@@ -9,6 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
+import com.ivpy.career.firestore.FirestoreClass
+import com.ivpy.career.model.User
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -50,29 +52,31 @@ class LoginActivity : AppCompatActivity() {
             val logPass:String=findViewById<TextInputLayout>(R.id.login_pass).editText!!.text.toString().trim()
             FirebaseAuth.getInstance().signInWithEmailAndPassword(logEmail,logPass)
                 .addOnCompleteListener { task->
-                    hideProgress()
                     if(task.isSuccessful){
-                        Toast.makeText(applicationContext,"Logged in",Toast.LENGTH_SHORT).show()
-                        Timer().schedule(timerTask {
-                            val intent =Intent(this@LoginActivity,MainActivity::class.java)
-                            startActivity(intent)
-                        },500)
+                        FirestoreClass().getUserDetail(this@LoginActivity)
                     }
                     else{
+                        hideProgress()
                         Toast.makeText(applicationContext,"Error in logging in",Toast.LENGTH_SHORT).show()
                     }
                 }
         }
     }
 
-    private fun showProgress(){
+    fun showProgress(){
         progressBar = Dialog(this)
         progressBar.setContentView(R.layout.progress_fullscreen)
         progressBar.setCancelable(false)
         progressBar.setCanceledOnTouchOutside(false)
         progressBar.show()
     }
-    private fun hideProgress(){
+    fun hideProgress(){
         progressBar.dismiss()
+    }
+
+    fun userLoggedinSucces (user:User){
+        hideProgress()
+        startActivity(Intent(this@LoginActivity,MainActivity::class.java))
+        finish()
     }
 }

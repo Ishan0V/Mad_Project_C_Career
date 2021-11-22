@@ -12,6 +12,8 @@ import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.ivpy.career.databinding.ActivityRegisterBinding
+import com.ivpy.career.firestore.FirestoreClass
+import com.ivpy.career.model.User
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -58,18 +60,27 @@ class RegisterActivity : AppCompatActivity() {
         var flag=false
         val email:String=findViewById<TextInputLayout>(R.id.reg_email).editText!!.text.toString().trim()
         val pass:String=findViewById<TextInputLayout>(R.id.reg_pass).editText!!.text.toString().trim()
+        val lname:String=findViewById<TextInputLayout>(R.id.last_name_reg).editText!!.text.toString().trim()
+        val fname:String=
+            findViewById<TextInputLayout>(R.id.first_name_reg).editText!!.text.toString().trim()
         if(validateDetail()){
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,pass)
                 .addOnCompleteListener(this){ task->
                     if(task.isSuccessful){
-                        hideProgress()
                         flag=true
                         val firebaseUser:FirebaseUser=task.result!!.user!!
-                        Toast.makeText(applicationContext,"Registered !!",Toast.LENGTH_SHORT).show()
-                        FirebaseAuth.getInstance().signOut()
+                        val user =User(
+                            firebaseUser.uid,
+                            fname,
+                            lname,
+                            email
+                        )
+                        FirestoreClass().registerUser(this@RegisterActivity,user)
+                        /*FirebaseAuth.getInstance().signOut()
+
                         Timer().schedule(timerTask {
                             finish()
-                        },1000)
+                        },100)*/
                     }else{
                         hideProgress()
                         Toast.makeText(applicationContext,"Error in registering",Toast.LENGTH_SHORT).show()
@@ -79,14 +90,24 @@ class RegisterActivity : AppCompatActivity() {
         return flag
     }
 
-    private fun showProgress(){
+    fun showProgress(){
         progressBar = Dialog(this)
         progressBar.setContentView(R.layout.progress_fullscreen)
         progressBar.setCancelable(false)
         progressBar.setCanceledOnTouchOutside(false)
         progressBar.show()
     }
-    private fun hideProgress(){
+    fun hideProgress(){
         progressBar.dismiss()
     }
+
+    fun registerSuccess(){
+        hideProgress()
+        Toast.makeText(applicationContext,"Registered !!",Toast.LENGTH_SHORT).show()
+    }
+
+    /*override fun onBackPressed() {
+        finish()
+        super.onBackPressed()
+    }*/
 }

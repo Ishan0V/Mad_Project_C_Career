@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CounsellingActivity">
-    <androidx.drawerlayout.widget.DrawerLayout
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/counsellingNavHost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/nav_menu_counselling">
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/counselling_menu_slide"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            app:menu="@menu/main_nav_slide_menu" />
-    </androidx.drawerlayout.widget.DrawerLayout>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

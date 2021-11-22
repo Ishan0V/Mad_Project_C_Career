@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_mentor_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+        <ImageView
+            android:id="@+id/add_photo_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:padding="@dimen/padding_20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+    </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mentor_name"
+        style="@style/login_input_text"
+        android:layout_marginTop="16dp"
+        android:hint="@string/name"
+        app:boxStrokeColor="#375F9C"
+        app:helperTextTextColor="#375F9C"
+        app:hintTextColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        app:placeholderTextColor="@color/navy_blue"
+        app:prefixTextColor="@color/navy_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mentor_add_degree"
+        style="@style/login_input_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/degree"
+        app:boxStrokeColor="#375F9C"
+        app:helperTextTextColor="#375F9C"
+        app:hintTextColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentor_name"
+        app:placeholderTextColor="@color/navy_blue"
+        app:prefixTextColor="@color/navy_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mentor_add_exp"
+        style="@style/login_input_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/experience"
+        app:boxStrokeColor="#375F9C"
+        app:helperTextTextColor="#375F9C"
+        app:hintTextColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentor_add_degree"
+        app:placeholderTextColor="@color/navy_blue"
+        app:prefixTextColor="@color/navy_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mentor_add_institute"
+        style="@style/login_input_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/institute"
+        app:boxStrokeColor="#375F9C"
+        app:helperTextTextColor="#375F9C"
+        app:hintTextColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentor_add_exp"
+        app:placeholderTextColor="@color/navy_blue"
+        app:prefixTextColor="@color/navy_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addMentorSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cursor_navy"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

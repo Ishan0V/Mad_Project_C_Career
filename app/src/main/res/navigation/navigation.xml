@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/initialCounselFragment">
 
+    <fragment
+        android:id="@+id/initialCounselFragment"
+        android:name="com.ivpy.career.InitialCounselFragment"
+        android:label="fragment_initial_counsel"
+        tools:layout="@layout/fragment_initial_counsel" >
+        <action
+            android:id="@+id/action_initialCounselFragment_to_afterTenthFragment"
+            app:destination="@id/afterTenthFragment" />
+        <action
+            android:id="@+id/action_initialCounselFragment_to_tewelthFragment"
+            app:destination="@id/tewelthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterTenthFragment"
+        android:name="com.ivpy.career.AfterTenthFragment"
+        android:label="fragment_after_tenth"
+        tools:layout="@layout/fragment_after_tenth" />
+    <fragment
+        android:id="@+id/tewelthFragment"
+        android:name="com.ivpy.career.TewelthFragment"
+        android:label="fragment_tewelth"
+        tools:layout="@layout/fragment_tewelth" >
+        <action
+            android:id="@+id/action_tewelthFragment_to_MScienceFragment"
+            app:destination="@id/MScienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MScienceFragment"
+        android:name="com.ivpy.career.MScienceFragment"
+        android:label="fragment_m_science"
+        tools:layout="@layout/fragment_m_science" />
 </navigation>
