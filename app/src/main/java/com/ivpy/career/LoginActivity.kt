@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun userLoggedinSucces (user:User){
         hideProgress()
-        startActivity(Intent(this@LoginActivity,CounsellingActivity::class.java))
+        startActivity(Intent(this@LoginActivity,MainActivity::class.java))
         finish()
     }
 }
