@@ -44,12 +44,15 @@ class RegisterActivity : AppCompatActivity() {
 
         if(fname.isEmpty() || lname.isEmpty() || pass.isEmpty() || retypePass.isEmpty() || email.isEmpty()){
             Toast.makeText(applicationContext,"Enter all Details",Toast.LENGTH_SHORT).show()
+            hideProgress()
             return false
         }else if(pass!=retypePass) {
             Toast.makeText(applicationContext,"Password does not match in both column",Toast.LENGTH_SHORT).show()
+            hideProgress()
             return false
         }else if(email.indexOf('@',0)==-1 || email.indexOf('.',0)==-1){
             Toast.makeText(applicationContext,"Enter correct email",Toast.LENGTH_SHORT).show()
+            hideProgress()
             return false
         }
         return true
